@@ -103,7 +103,7 @@
     DetailViewController *zoomViewController = [[DetailViewController alloc]init];
     Bird *bird = birds[indexPath.row];
     zoomViewController.bird = bird;
-//    [self.navigationController pushViewController:zoomViewController animated:YES];
+    [self.navigationController pushViewController:zoomViewController animated:YES];
     
     
 //    ReceiptDetailViewController *controller = [[ReceiptDetailViewController alloc] initWithNibName:@"ReceiptDetailViewController" bundle:nil];
