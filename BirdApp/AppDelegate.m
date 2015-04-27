@@ -22,10 +22,25 @@
     BirdTableViewController *birdTable = [[BirdTableViewController alloc]initWithStyle:UITableViewStylePlain];
     CGRect viewRect = [[UIScreen mainScreen]bounds];
     self.window = [[UIWindow alloc] initWithFrame:viewRect];
-    self.window.rootViewController = birdTable;
-    [self.window makeKeyAndVisible];
+//    self.window.rootViewController = birdTable;
+
+    
     // Override point for customization after application launch.
+  
+
+//    create instance of feed view controller
+//FeedViewController *feedViewController = [[FeedViewController alloc]init];
+    
+    
+//    create an instance of the navigation controller
+UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:birdTable];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
+
+    
+   
     
 }
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9677409E1AEEC766006C0909 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677409D1AEEC766006C0909 /* DetailViewController.m */; };
 		968019571AEAA0EB00291135 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 968019561AEAA0EB00291135 /* main.m */; };
 		9680195A1AEAA0EB00291135 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 968019591AEAA0EB00291135 /* AppDelegate.m */; };
 		9680195D1AEAA0EB00291135 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9680195C1AEAA0EB00291135 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9677409C1AEEC766006C0909 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9677409D1AEEC766006C0909 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		968019511AEAA0EB00291135 /* BirdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		968019551AEAA0EB00291135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968019561AEAA0EB00291135 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				968019801AEAA1F100291135 /* BirdTableViewController.m */,
 				968019821AEAA26300291135 /* BirdTableViewCell.h */,
 				968019831AEAA26300291135 /* BirdTableViewCell.m */,
+				9677409C1AEEC766006C0909 /* DetailViewController.h */,
+				9677409D1AEEC766006C0909 /* DetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				9680195A1AEAA0EB00291135 /* AppDelegate.m in Sources */,
 				9680197D1AEAA13C00291135 /* Bird.m in Sources */,
 				968019571AEAA0EB00291135 /* main.m in Sources */,
+				9677409E1AEEC766006C0909 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +456,7 @@
 				968019761AEAA0EB00291135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		968019771AEAA0EB00291135 /* Build configuration list for PBXNativeTarget "BirdAppTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +465,7 @@
 				968019791AEAA0EB00291135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 #import "BirdTableViewController.h"
 #import "Bird.h"
 #import "BirdTableViewCell.h"
+#import "DetailViewController.h"
 
 @interface BirdTableViewController ()
 
@@ -99,14 +100,33 @@
 //get detection of cell
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"row selected");
-    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"word bird" message:@"cell selected" preferredStyle:UIAlertControllerStyleAlert];
+    DetailViewController *zoomViewController = [[DetailViewController alloc]init];
+    Bird *bird = birds[indexPath.row];
+    zoomViewController.bird = bird;
+//    [self.navigationController pushViewController:zoomViewController animated:YES];
     
-    UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
     
+//    ReceiptDetailViewController *controller = [[ReceiptDetailViewController alloc] initWithNibName:@"ReceiptDetailViewController" bundle:nil];
     
-    [alertView addAction:okayAction];
-    //    display the hello action message
-    [self presentViewController:alertView animated:YES completion:nil];
+//  tried this
+//    NSIndexPath *indexDetailPath = [self.tableView indexPathForSelectedRow];
+//    DetailViewController *destViewController = ;
+//    Bird *bird = [birds objectAtIndex:indexPath.row];
+//    destViewController.birdName = bird.name;
+//    destViewController.recipeTime = bird.birdImage;
+//    
+    
+//  tried this   
+//    Bird *selectedBird = [self.image objectAtIndex:indexPath.row];
+//    birds.bird = selectedBird;
+//    [self.navigationController pushViewController:controller animated:YES];
+    
+//    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"word bird" message:@"cell selected" preferredStyle:UIAlertControllerStyleAlert];
+    
+//    UIAlertAction *okayAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+//    [alertView addAction:okayAction];
+//    display the hello action message
+//    [self presentViewController:alertView animated:YES completion:nil];
 }
 
 
